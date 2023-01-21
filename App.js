@@ -4,12 +4,14 @@ import { NavigationContainer } from '@react-navigation/native';
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <NavigationContainer styles={styles.main}>
       <TheLostMind />
     </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  
+  main: {
+    
+  }
 })
