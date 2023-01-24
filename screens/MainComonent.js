@@ -38,8 +38,7 @@ const HomeNavigator = () => {
 
 const Main = () => {
     return (
-        <View style={{ flex:1 }}
-        >
+        <View style={{ flex:1 }}>
             <Drawer.Navigator initialRouteName='Home' drawerStyle={{ backgroundColor: '#000000', borderRightWidth: 4, borderColor: 'white', marginTop: 40, borderTopWidth: 4}}>
                 <Drawer.Screen name='The Beginning' component={HomeNavigator}  />
             </Drawer.Navigator>
