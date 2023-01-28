@@ -12,6 +12,10 @@ export default function App() {
   );
 }
 
+// Pull is good
+
+
+
 // const styles = StyleSheet.create({
 //   main: {
     
