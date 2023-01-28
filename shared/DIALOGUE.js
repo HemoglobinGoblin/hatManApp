@@ -3,26 +3,26 @@ export const DIALOGUE = [
     {
         id: 0,
         choiceName: 'The Lost Mind',
-        dialogue: `The very uncomfortable feeling of someone watching you suddendly wakes you up. You open one eye to look around but see no one. The second you open both eyes you begin to questioning your current location. \n \n  "Why are my walls damaged?" You say confused`
-                   //stand up
+        dialogue: `The very uncomfortable feeling of someone watching you suddendly wakes you up. You open one eye to look around but see no one. The second you open both eyes you begin to questioning your current location. \n \n  "Why are my walls damaged?" You say confused`,
+        options:['Stand Up']  //stand up
                    //+ with ``
     },
     {
         id: 1,
         choiceName: 'Stand Up',
-        dialogue: `As you get up, you realize that the bed you're in is covered in dust. You take a closer look and realize that you don't recognize this room. \n \n You've never been here before... \n \n You spot a red ray of light shining through a tiny window. You come to the conclusion that this room hasn't been inhabited in a very long time based off of the way nature has door. \n \n What do you do first?`
-                    //Look out the window
+        dialogue: `As you get up, you realize that the bed you're in is covered in dust. You take a closer look and realize that you don't recognize this room. \n \n You've never been here before... \n \n You spot a red ray of light shining through a tiny window. You come to the conclusion that this room hasn't been inhabited in a very long time based off of the way nature has door. \n \n What do you do first?`,
+        options:['Check the door','Look out the window']           //Look out the window
                     //Check the door
     },
     {
         id: 2,
         choiceName: 'Look out the window',
-        dialogue: `You hear the crunching of debris under your feet as you walk up to the window. You pull the blinds apart and see that it's actually not sunlight coming through the window. In fact, everything outside just looks wrong. The bright red light was coming from behind the trees. You tried looking up to see if the light was coming from above but you weren't able to see past the crowns of the trees. "Where am I?" you think to youself. Out of no where, the red light begins to fade and quickly dissapears. \n \n It's pitch dark outside now... \n \n There is only one option left. Go ahead and check the door.`
-                   //Go check the door
+        dialogue: `You hear the crunching of debris under your feet as you walk up to the window. You pull the blinds apart and see that it's actually not sunlight coming through the window. In fact, everything outside just looks wrong. The bright red light was coming from behind the trees. You tried looking up to see if the light was coming from above but you weren't able to see past the crowns of the trees. "Where am I?" you think to youself. Out of no where, the red light begins to fade and quickly dissapears. \n \n It's pitch dark outside now... \n \n There is only one option left. Go ahead and check the door.`,
+        options:['Check the door']         //
     },
     {
         id: 3,
-        choiceName: 'You check the door',
+        choiceName: 'Check the door',
         dialogue: `The door's paint is heavily chipped and you can tell it's been abused. It's also missing a doorknob. Luckily the rest of the doorknob mechanism was also missing so a simple pull would open it. Pulling the door open reveals a hallway. You peek out into the hallway. \n \n Left or right?`
                 //Peek left
                 //Peek right
