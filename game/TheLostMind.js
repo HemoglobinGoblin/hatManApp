@@ -8,7 +8,7 @@ const TheLostMind = () => {
     const [currentRoom, setCurrentRoom] = useState ('start');
 
     function handleOptionClick(option) {
-        setCurrentScene(option);
+        setCurrentRoom(option);
     }
 
     if (currentRoom === 'start'){
