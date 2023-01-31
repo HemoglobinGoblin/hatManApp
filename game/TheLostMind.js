@@ -17,7 +17,7 @@ let i = 0;
 const TheLostMind = () => {
   const [currentRoom, setCurrentRoom] = useState(0);
 
-  if (currentRoom <= 2) {
+  if (currentRoom <= 15) {
     return (
       <ScrollView style={{ backgroundColor: "black" }}>
         <Card containerStyle={{ padding: 0, backgroundColor: "black" }}>
