@@ -5,6 +5,7 @@ import { Icon } from "react-native-elements";
 import TheLostMind from "../game/TheLostMind";
 import hatMan from '../assets/hatMan.png'
 import Constants  from "expo-constants";
+import ContactUs from "./ContactUs";
 
 const Drawer = createDrawerNavigator();
 
@@ -32,6 +33,21 @@ const HomeNavigator = () => {
                     )
                 })} 
             />
+            <Stack.Screen
+                name='Contact Us'
+                component={ContactUs}
+                options={({navigation}) => ({
+                    title: 'Home',
+                    headerLeft: () => (
+                        <Icon 
+                            name='bars'
+                            type='font-awesome'
+                            iconStyle={styles.stackIcon}
+                            onPress={() => navigation.toggleDrawer()}
+                        />
+                    )
+                })} 
+            />
         </Stack.Navigator>
     )
 }
@@ -39,8 +55,13 @@ const HomeNavigator = () => {
 const Main = () => {
     return (
         <View style={{ flex:1 }}>
-            <Drawer.Navigator initialRouteName='Home' drawerStyle={{ backgroundColor: '#000000', borderRightWidth: 4, borderColor: 'white', marginTop: 40, borderTopWidth: 4}}>
-                <Drawer.Screen name='The Beginning' component={HomeNavigator}  />
+            <Drawer.Navigator
+                initialRouteName='Home'
+                drawerStyle={styles.drawerStyle}
+                drawerContentOptions={styles.drawerContentOptions}
+            >
+                <Drawer.Screen name='The Beginning' component={HomeNavigator} />
+                <Drawer.Screen name='Contact Us' component={ContactUs} />
             </Drawer.Navigator>
         </View>
     )
@@ -56,6 +77,15 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         color: '#fff',
         fontSize: 24
+    },
+    drawerStyle: {
+        backgroundColor: '#000000',
+        borderRightWidth: 4, borderColor: 'white',
+        marginTop: 40, borderTopWidth: 4
+    },
+    drawerContentOptions: {
+        activeTintColor: 'white',
+        inactiveTintColor: 'white'
     }
 })
 
