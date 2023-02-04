@@ -33,21 +33,29 @@ const HomeNavigator = () => {
                     )
                 })} 
             />
-            <Stack.Screen
-                name='Contact Us'
-                component={ContactUs}
-                options={({navigation}) => ({
-                    title: 'Home',
-                    headerLeft: () => (
-                        <Icon 
-                            name='bars'
-                            type='font-awesome'
-                            iconStyle={styles.stackIcon}
-                            onPress={() => navigation.toggleDrawer()}
-                        />
-                    )
-                })} 
-            />
+        </Stack.Navigator>
+    )
+}
+
+const ContactUsNavigator = () => {
+    const Stack = createStackNavigator();
+    return(
+        <Stack.Navigator screenOptions={screenOptions}>
+        <Stack.Screen
+        name='Contact Us'
+        component={ContactUs}
+        options={({navigation}) => ({
+            title: 'Contact Us',
+            headerLeft: () => (
+                <Icon 
+                name='bars'
+                type='font-awesome'
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+                />
+                )
+            })} 
+        /> 
         </Stack.Navigator>
     )
 }
@@ -61,7 +69,7 @@ const Main = () => {
                 drawerContentOptions={styles.drawerContentOptions}
             >
                 <Drawer.Screen name='The Beginning' component={HomeNavigator} />
-                <Drawer.Screen name='Contact Us' component={ContactUs} />
+                <Drawer.Screen name='Contact Us' component={ContactUsNavigator} />
             </Drawer.Navigator>
         </View>
     )
